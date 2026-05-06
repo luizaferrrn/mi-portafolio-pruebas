@@ -121,3 +121,36 @@ footer{
     letter-spacing: 1px;
 }
 
+/*portafolio*/
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contenedores {
+    background: var(--color-fondo-suave);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: var(--transicion);
+    display: flex;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.producto img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
